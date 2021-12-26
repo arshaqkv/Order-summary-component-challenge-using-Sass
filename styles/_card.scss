@@ -1,0 +1,131 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .card {
+        width: 88%;
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 2rem;
+        box-shadow: 0 15px 20px hsla(245, 75%, 52%,0.1),0 15px 30px hsla(245, 75%, 52%,0.01);
+        max-width: 450px;
+        
+
+        .hero {
+            width: 100%;
+            border-radius: 2rem 2rem 0 0;
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+
+            .title {
+                font-size: 2.2rem;
+                font-weight: 900;
+                color: $dark-blue;
+            }
+
+            .description {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $desaturated-blue;
+                text-align: center;
+                padding: 1.6rem 1rem;
+                line-height: 2.4rem;
+            }
+
+            .plan-card {
+                background-color: $very-pale-blue;
+                width: 100%;
+                border-radius: 1.5rem;
+                margin: 0.8rem 0;
+                padding: 1.6rem 1.2rem;
+                
+                .list {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 2rem;
+                }
+
+                .payment-plan {
+                    color: $dark-blue;
+                    font-size: 1.4rem;
+                    font-weight: 900;
+                    margin-bottom: 0.5rem;
+                }
+
+                .price {
+                    color: $desaturated-blue;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    opacity: 0.5;
+                }
+
+                a {
+                    color: $bright-blue;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+
+                    &:hover {
+                        text-decoration: none;
+                        opacity: 0.75;
+                    }
+                }
+            }
+
+            .btn {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .primary {
+                background-color: $bright-blue;
+                margin: 1.5rem;
+                padding: 1.5rem;
+                border-radius: 1rem;
+                transition: 0.3s ease;
+                box-shadow: 0 15px 20px hsla(245, 75%, 52%,0.15),0 15px 30px hsla(245, 75%, 52%,0.15);
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+
+            .secondary {
+                padding: 0.8rem;
+                
+                a {
+                    color: $desaturated-blue;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        color: $dark-blue;
+                    }
+                }
+            }
+            
+        }
+    }
+}
